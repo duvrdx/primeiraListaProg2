@@ -18,19 +18,18 @@ def main():
         result = dado() #Resultado da jogada do dado
        
         #Adicionando o resultado na lista de contadores
-        match result:
-            case 1:
-                listCont[0] += 1
-            case 2:
-                listCont[1] += 1
-            case 3:
-                listCont[2] += 1
-            case 4:
-                listCont[3] += 1
-            case 5:
-                listCont[4] += 1
-            case 6:
-                listCont[5] += 1
+        if result == 1:
+            listCont[0] += 1
+        if result == 2:
+            listCont[1] += 1
+        if result == 3:
+            listCont[2] += 1
+        if result == 4:
+            listCont[3] += 1
+        if result == 5:
+            listCont[4] += 1
+        if result == 6:
+            listCont[5] += 1
     
     for pos, face in enumerate(listCont):
         print("A face",(pos+1),f"caiu {face}" )

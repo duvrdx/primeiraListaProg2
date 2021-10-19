@@ -49,19 +49,18 @@ def main():
             percent = calcPercentual(jogador, totalVotos)      
 
             #Aqui utilizei uma função da nova versão do python 3.10, mas poderia ser representado com ifs
-            match pos:
-                case 0:
-                    saida.write(f"\nWindows Server      {jogador:05} {percent:02}%")
-                case 1:
-                    saida.write(f"\nUnix                {jogador:05} {percent:02}%")
-                case 2:
-                    saida.write(f"\nLinux               {jogador:05} {percent:02}%")
-                case 3:
-                    saida.write(f"\nNetware             {jogador:05} {percent:02}%")
-                case 4:
-                    saida.write(f"\nMac OS              {jogador:05} {percent:02}%")
-                case 5:
-                    saida.write(f"\nOutro               {jogador:05} {percent:02}%")
+            if pos == 0:
+                saida.write(f"\nWindows Server      {jogador:05} {percent:02}%")
+            if pos == 1:
+                saida.write(f"\nUnix                {jogador:05} {percent:02}%")
+            if pos == 2:
+                saida.write(f"\nLinux               {jogador:05} {percent:02}%")
+            if pos == 3:
+                saida.write(f"\nNetware             {jogador:05} {percent:02}%")
+            if pos == 4:
+                saida.write(f"\nMac OS              {jogador:05} {percent:02}%")
+            if pos == 5:
+                saida.write(f"\nOutro               {jogador:05} {percent:02}%")
 
         #Imprimindo total
         saida.write("\n------------------- --------- ")
